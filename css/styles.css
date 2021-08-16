@@ -142,7 +142,7 @@ body {
 }
 .left-side {
   display: flex;
-  flex-grow: 2;
+  flex-grow: 0.5;
   align-items: center;
   justify-content: center;
   padding: 35px;
@@ -157,12 +157,11 @@ body {
 }
 .right-side {
   display: flex;
-  flex-grow: 1;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 25px;
-  max-height: 500px;
+  max-height: 630px;
 }
 
 .right-side h1 {

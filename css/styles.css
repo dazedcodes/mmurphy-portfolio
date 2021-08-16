@@ -136,6 +136,7 @@ body {
 .about-container {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 .left-side {
   padding: 35px;
@@ -148,7 +149,6 @@ body {
 .right-side {
   padding: 25px;
   max-height: 500px;
-  overflow: scroll;
 }
 
 .right-side h1 {

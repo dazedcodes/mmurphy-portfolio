@@ -139,6 +139,9 @@ body {
   align-items: center;
 }
 .left-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 35px;
 }
 #ab-portrait {
@@ -147,6 +150,10 @@ body {
   border-radius: 30px;
 }
 .right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 25px;
   max-height: 500px;
 }
@@ -179,7 +186,7 @@ body {
 hr {
   width: 150px;
   float: left;
-  margin-left: 20px;
+  margin-left: 75px;
   border: 1px solid black;
   border-bottom: 0;
 }

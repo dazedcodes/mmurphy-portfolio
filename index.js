@@ -4,7 +4,7 @@ window.onscroll = function () {
 };
 
 // Get the navbar
-var navbar = document.getElementById("navbar");
+var navbar = document.getElementById("myNavbar");
 
 // Get the offset position of the navbar
 var sticky = navbar.offsetTop;
@@ -15,5 +15,15 @@ function myFunction() {
     navbar.classList.add("sticky");
   } else {
     navbar.classList.remove("sticky");
+  }
+}
+
+/* Toggle between adding and removing the "responsive" class to the navbar when the user clicks on the icon */
+function toggleResponsive() {
+  var x = document.getElementById("myNavbar");
+  if (x.className.includes("navbar")) {
+    x.classList.add("responsive");
+  } else {
+    x.classList.add("navbar");
   }
 }

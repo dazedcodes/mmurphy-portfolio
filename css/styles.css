@@ -1,0 +1,179 @@
+/* Set default css styling */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+/* import fonts  */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat:wght@100&family=Poppins:wght@600&family=STIX+Two+Text&display=swap");
+
+.home {
+  /* import image for home page */
+  background-image: url("../assets/home/home-background.png");
+
+  /* set specific width and height  */
+  height: 100%;
+
+  /* implement parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+/* style heading to center and dimensions */
+#heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  max-width: 1350px;
+  height: 650px;
+}
+
+/* style heading name */
+#heading-item1 {
+  margin: 0 0;
+  padding: 15px;
+  font-family: "STIX Two Text", serif;
+  font-size: 80px;
+  color: white;
+  letter-spacing: 0.06em;
+  font-weight: 100;
+  text-align: center;
+}
+
+/* style heading one-liner */
+#heading-item2 {
+  margin: 0 0;
+  padding: 15px;
+  padding-bottom: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  color: white;
+  font-weight: lighter;
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+  width: 495px;
+  text-align: center;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.about-me {
+  height: 650px;
+  background-color: #e1cec3;
+}
+nav {
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.4);
+  height: 85px;
+  margin: 0;
+}
+
+.navbar-item {
+  display: flex;
+  flex-direction: row nowrap;
+  list-style-type: none;
+  float: left;
+  align-items: center;
+}
+.navbar li {
+  list-style-type: none;
+}
+.navbar a {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 100px;
+  color: black;
+}
+
+#logo {
+  display: inline-flex;
+  height: 50px;
+  width: 50px;
+  padding: 5px;
+  margin-right: 20px;
+  margin-bottom: 18px;
+  float: right;
+}
+
+#logo-img {
+  border-radius: 50px;
+}
+.about-container {
+  display: flex;
+  flex-direction: row;
+}
+.left-side {
+  padding: 35px;
+}
+#ab-portrait {
+  height: 450px;
+  width: 450px;
+  border-radius: 30px;
+}
+.right-side {
+  padding: 25px;
+  max-height: 500px;
+  overflow: scroll;
+}
+.right-side p,
+h1,
+h4 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.right-side h1 {
+  font-family: "STIX Two Text", serif;
+  font-size: 75px;
+  letter-spacing: 0.06em;
+  font-weight: 100;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.right-side h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: lighter;
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+}
+
+.right-side p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
+  line-height: 1.6;
+  width: 75%;
+  text-align: justify;
+}
+
+hr {
+  width: 150px;
+  float: left;
+  margin-left: 20px;
+  border: 1px solid black;
+  border-bottom: 0;
+}
+/* font-family: 'DM Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'STIX Two Text', serif; */

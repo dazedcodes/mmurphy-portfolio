@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <div class="home">
+    <div class="home parallax">
       <h1 id="heading-item1">Maya Murphy</h1>
       <h3 id="heading-item2">
         A CREATIVE WHO DELIVERS VALUE THROUGH LEADERSHIP, DEVELOPMENT, AND
@@ -17,13 +17,13 @@
     </div>
 
     <!-- About Me Page  -->
-    <div class="about-me">
+    <div class="about-me" id="about-section">
       <div class="navbar" id="myNavbar">
-        <a href="#about-me-start">ABOUT ME</a>
-        <a href="#">PROJECTS</a>
-        <a href="#">MOTTO</a>
-        <a href="#">EXPERIENCE</a>
-        <a href="#">CONTACT</a>
+        <a href="#about-section">ABOUT ME</a>
+        <a href="#project-section">PROJECTS</a>
+        <a href="#motto-section">MOTTO</a>
+        <a href="#experience-section">EXPERIENCE</a>
+        <a href="#contact-section">CONTACT</a>
         <a
           href="javascript:void(0);"
           style="font-size: 17px;"
@@ -33,8 +33,7 @@
         >
       </div>
       <!-- About Me Content -->
-      <div class="about-container">
-        <a id="about-me-start"></a>
+      <div class="about-content">
         <!-- About Me Left Side -->
         <div class="left-side">
           <img
@@ -46,6 +45,7 @@
         <!-- About Me Right Side  -->
         <div class="right-side">
           <h1>About Me</h1>
+          <a id="about-me-start"></a>
           <h4>A LENS THAT HELPS ONE SEE CLEARLY</h4>
           <p>
             At an early age, I was always cognizant of my figure it out
@@ -61,6 +61,36 @@
         </div>
       </div>
     </div>
+
+    <!-- Projects Page  -->
+    <div class="projects parallax" id="project-section">
+      <div class="projects-content">
+        <div class="left">
+          <h1>Projects</h1>
+          <h3>THAT MAKE LIFE EASIER</h3>
+          <p>
+            Whether you need help keeping track of finances, need a laugh, or
+            motivation to keep your mind fresh, there's a tool just for you.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Motto Page -->
+    <div class="motto parallax" id="motto-section">
+      <div class="motto-content">
+        <h1 id="motto-quote">
+          The highest form of nutrition is self-expression. Are you nuturing
+          yourself?
+        </h1>
+        <h6 id="author">
+          HINDZ
+        </h6>
+      </div>
+    </div>
+    <!-- Experience Page -->
+    <div class="experience" id="experience-section"></div>
+    <!-- Contact Page  -->
+    <div class="contact" id="contact-section"></div>
   </body>
 
   <script src="index.js"></script>

@@ -7,19 +7,19 @@ body {
 }
 /* import fonts  */
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat:wght@100&family=Poppins:wght@600&family=STIX+Two+Text&display=swap");
-
+.parallax {
+  /* implement parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .home {
   /* import image for home page */
   background-image: url("../assets/home/home-background.png");
 
   /* set specific width and height  */
   height: 100%;
-
-  /* implement parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 
   display: flex;
   flex-direction: column;
@@ -88,9 +88,10 @@ body {
   text-align: center;
   padding: 14px 16px;
   color: black;
+  font-weight: lighter;
   font-size: 18px;
   font-family: "Poppins", sans-serif;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .navbar a:hover {
@@ -133,7 +134,7 @@ body {
     text-align: left;
   }
 }
-.about-container {
+.about-content {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -198,6 +199,65 @@ hr {
   float: left;
   border: 1px solid black;
   border-bottom: 0;
+}
+
+.projects {
+  /* import image for home page */
+  background-image: url("../assets/projects/projects-background.png");
+
+  /* set specific width and height  */
+  height: 600px;
+}
+
+.motto {
+  /* import image for home page */
+  background-image: url("../assets/motto/motto-background.png");
+
+  /* set specific width and height  */
+  height: 600px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#motto-quote {
+  display: flex;
+  text-align: center;
+  font-family: "STIX Two Text", serif;
+  color: black;
+  font-size: 60px;
+  margin: 0 50px;
+  margin-top: 40px;
+  padding: 0 80px;
+  font-weight: lighter;
+}
+
+.motto-content #author {
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  color: black;
+  font-weight: lighter;
+  line-height: 1.6;
+}
+
+.experience {
+  /* import image for home page */
+  background-image: url("../assets/experience/background.png");
+
+  /* set specific width and height  */
+  height: 650px;
+}
+
+.contact {
+  /* import image for home page */
+  background-image: url("../assets/contact/letsconnect-background.png");
+
+  /* set specific width and height  */
+  height: 650px;
 }
 /* font-family: 'DM Sans', sans-serif;
 font-family: 'Montserrat', sans-serif;
